@@ -1,38 +1,158 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: "liga";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+    color: #fff;
+    height: 44px;
+    box-sizing: border-box;
+    background-color: #004269;
+    display: flex;
+    padding: 5px;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+    color: #fff;
+    background-color: transparent;
+    border-style: none;
+    border-radius: 5px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button .icon {
+    width: 20px;
+    height: 20px;
+    position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.icons {
+    width: 10px;
+    margin-left: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.leftMenu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.rightMenu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.left {
+    padding: 0 12px;
+    display: inline-flex;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    height: 32px;
+    font-size: .9rem;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 1px;
+}
+
+.trello {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    margin-top: 1px;
+}
+
+.search {
+    position: relative;
+    margin-right: 8px;
+}
+
+.search input {
+    color: inherit;
+    background-color: hsla(0, 0%, 100%, 0.2);
+    width: 250px;
+    height: 32px;
+    border-style: none;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 30px;
+}
+
+.search span {
+    color: white;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 5px;
+    top: 7px;
+    font-size: 20px;
+}
+
+.search ::placeholder {
+    color: #ccc;
+}
+
+.userProfile {
+    display: flex;
+    color: #172b4d;
+    background-color: #dfe1e6;
+    height: 32px;
+    width: 32px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 700;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+div .create {
+    width: max-content;
+    color: #fff;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.24);
+    margin-left: 12px;
+}
+
+div .hover:hover {
+    background-color: #eeeeee63;
+    border-radius: 5px;
 }
